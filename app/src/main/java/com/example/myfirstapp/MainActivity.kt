@@ -11,6 +11,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.myfirstapp.components.excercise.ConstraintBarrier
+import com.example.myfirstapp.components.excercise.ConstraintChain
+import com.example.myfirstapp.components.excercise.ConstraintExampleGuide
 import com.example.myfirstapp.components.excercise.ConstraintLayoutPractice
 import com.example.myfirstapp.components.layout.ColumLayout
 import com.example.myfirstapp.components.layout.ConstraintBasicLayout
@@ -23,7 +26,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    ConstraintLayoutPractice(Modifier)
+                    ConstraintChain(Modifier)
                 }
             }
         }
